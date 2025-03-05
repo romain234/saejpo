@@ -1,0 +1,16 @@
+<div id="page">
+    <nav>
+        <ul>
+            <li (click)="changetab(1)"><a>Liste participants JPO</a></li>
+            <li (click)="changetab(2)"><a>Statistiques</a></li>
+            <li (click)="changetab(3)"><a>Réponses formulaire</a></li>
+            <li (click)="changetab(4)"><a> Projets</a></li>
+        </ul>
+    </nav>
+    <div [ngSwitch]="tab" id="child">
+        <app-liste *ngSwitchCase="1"></app-liste>
+        <app-stats *ngSwitchCase="2"></app-stats>
+        <app-reponses *ngSwitchCase="3"></app-reponses>
+        <app-projets *ngSwitchCase="4"></app-projets>
+    </div>
+</div>

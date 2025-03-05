@@ -1,0 +1,33 @@
+#page {
+    display: flex;
+}
+
+#child{
+    width: -webkit-fill-available;
+}
+
+nav {
+    background-color: white;
+    min-width: 200px;
+    filter: drop-shadow(5px 0px 7px gray);
+
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+a {
+    color: #2F2A85;
+}
+
+li a:hover {
+    background-color: #2F2A85;
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
